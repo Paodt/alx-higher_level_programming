@@ -3,8 +3,8 @@ def element_at(my_list, idx):
     length = len(my_list)
     id = my_list[idx]
     if idx < 0:
-        return none
-    if idx > length - 1:
-        return none
-    else:
+        return None
+    if idx < length:
         return id
+    else:
+        return None
