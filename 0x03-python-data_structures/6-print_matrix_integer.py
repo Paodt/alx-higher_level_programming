@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    mtx1 = matrix[0]
-    for i in mtx1:
-        print("{:d}".format(i), end=' ')
-    print()
-    mtx2 = matrix[1]
-    for i in mtx2:
-        print("{:d}".format(i), end=' ')
-    print()
-    mtx3 = matrix[2]
-    for i in mtx3:
-        print("{:d}".format(i), end=' ')
-    print()
+    length1 = len(matrix)
+    for i in range(length1):
+        length2 = len(matrix[i])
+        for j in range(length2):
+            if j != 0:
+                print(" ", end='')
+            print("{:d}".format(matrix[i][j]), end='')
+        print()
